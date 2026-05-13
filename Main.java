@@ -1,24 +1,18 @@
-package eldoria;
-
-import java.util.ArrayList;
-
-/**
- * Classe principal que demonstra os conceitos de POO aplicados no sistema de personagens de Eldoria.
- * Demonstra: herança, polimorfismo, encapsulamento, instanceof, equals() e hashCode().
- */
 public class Main {
-    
     public static void main(String[] args) {
-        System.out.println("=== BEM-VINDOS AO REINO DE ELDORIA ===");
-        System.out.println("Os Guardiões se preparam para a batalha!\n");
+        // Merlin
+        Mago personagem1 = new Mago("Merlin", "Mago", 4, 80, 60.0);
         
-        // Criando uma lista polimórfica de personagens
+        // Arthur
+        Guerreiro personagem2 = new Guerreiro("Arthur", "Guerreiro", 5, 150, 50.0);
         
-        // Adicionando Magos à lista
-        
-        // Adicionando Guerreiros à lista
-        
-        // Percorrendo a lista e demonstrando polimorfismo
-        
-}
+        // Status
+        personagem1.mostrarStatus();
+        personagem2.mostrarStatus();
 
+        // Habilidades
+        System.out.println("--- Habilidades ---");
+        personagem1.usarHabilidade();
+        personagem2.usarHabilidade();
+    }
+}
